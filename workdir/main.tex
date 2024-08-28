@@ -1,0 +1,74 @@
+% Templates:
+%   https://bibtex.eu/es/
+%   https://bibtex.eu/es/overleaf/#latex-basics
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+
+\graphicspath{ {./images/} }
+
+\title{My First LaTeX Document}
+\author{Your Name}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a sample document demonstrating the basics of LaTeX.
+
+\section{Formatting}
+You can format text in \textbf{bold}, \textit{italic}, \underline{underline}, or \texttt{typewriter} font.
+
+\section{Lists}
+Here's an example of a bulleted list:
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\section{Mathematics}
+LaTeX is great for typesetting mathematical formulas. Here's an example of an equation:
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+\section{Figures and Tables}
+You can include figures and tables in your document. Here's an example of a figure:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{An example figure}
+    \label{fig:example}
+\end{figure}
+
+And here's an example of a table:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Item} & \textbf{Quantity} \\
+        \hline
+        Apple & 3 \\
+        Orange & 5 \\
+        \hline
+    \end{tabular}
+    \caption{An example table}
+    \label{tab:example}
+\end{table}
+
+\section{References}
+You can refer to labeled sections, equations, figures, and tables. For example, see Figure~\ref{fig:example} and Table~\ref{tab:example}.
+
+\section{Citations and Bibliography}
+Cite references using \cite{Hemingway1952}. Here's an example citation.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

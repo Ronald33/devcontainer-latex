@@ -1,0 +1,9 @@
+version: "3.3"
+services: 
+  latex:
+    container_name: latex
+    build:
+      context: ./latex/
+      dockerfile: Dockerfile
+    volumes: 
+      - ./workdir:/workdir

@@ -1,0 +1,24 @@
+{
+	"name": "Latex", 
+	"dockerComposeFile":
+    [
+        "../docker-compose.yml"
+    ],
+	"service": "latex",
+	"workspaceFolder": "/workdir",
+	"customizations": 
+	{
+		"vscode":
+		{
+			"settings": 
+			{
+				"editor.tabSize": 4
+			}, 
+			"extensions": 
+			[
+				"vincaslt.highlight-matching-tag",
+				"tomoki1207.pdf"
+			]
+		}
+	}
+}
